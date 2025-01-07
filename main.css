@@ -186,7 +186,8 @@ header {
 .introduction__section-indicator {
   position: relative;
   margin-block-start: 80px;
-  margin-block-end: 64px;
+  /* margin-block-end: 64px; */
+  margin-block-end: 62px;
 }
 
 .introduction__section-indicator > div,
@@ -432,7 +433,8 @@ header {
   }
 
   .hero__text {
-    padding-block: 24px;
+    /* padding-block: 24px; */
+    padding-block: 36px;
     animation: slideInFromBottom 1s ease-in-out;
   }
 
@@ -443,11 +445,13 @@ header {
 
   .hero__description {
     font-size: 18px;
-    margin-block: 32px;
+    /* margin-block: 32px; */
+    margin-block: 36px;
   }
 
   .introduction {
-    padding: 56px 160px 72px;
+    /* padding: 56px 160px 72px; */
+    padding: 78px 160px 72px;
   }
 
   .introduction__cards {
@@ -474,7 +478,8 @@ header {
   }
 
   .download-app__section-indicator {
-    margin-block-end: 72px;
+    /* margin-block-end: 72px; */
+    margin-block-end: 84px;
   }
 
   .download-app__text {
