@@ -439,7 +439,6 @@ header {
 
   .hero__img-right {
     justify-content: right;
-    /* margin-bottom: -60px; */
     margin-block-end: -3.125rem;
     margin-inline-end: -4.3%;
     animation: slideInFromRight 1s ease-in-out;
@@ -452,7 +451,6 @@ header {
   }
 
   .hero__text {
-    /* padding-block: 24px; */
     padding-block: 2.25em;
     animation: slideInFromBottom 1s ease-in-out;
   }
@@ -463,14 +461,11 @@ header {
 
   .hero__description {
     font-size: 1.125rem;
-    /* margin-block: 36px; */
     margin-block: 1.875rem;
   }
 
   .introduction {
-    padding: 1.25em 10em 4.5em; /* *****2.625em******** */
-    /* padding: 2.625em 10em 4.5em; */
-    /* padding: 78px 160px 72px; */
+    padding: 1.25em 10em 4.5em;
   }
 
   .introduction__cards {
@@ -488,7 +483,6 @@ header {
   }
 
   .introduction__title {
-    /* margin-block-start: 2rem; */
     font-size: 2.5rem;
     margin-block-end: 2.25rem;
   }
@@ -504,7 +498,6 @@ header {
   }
 
   .download-app__section-indicator {
-    /* margin-block-end: 72px; */
     margin-block-end: 5.25rem;
   }
 
