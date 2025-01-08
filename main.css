@@ -445,7 +445,8 @@ header {
 
   .hero__description {
     font-size: 18px;
-    /* margin-block: 32px; */
+    margin-block: 32px;
+    /* margin-block: 30px; */
     /* margin-block: 36px; */
     margin-block: 40px;
   }
