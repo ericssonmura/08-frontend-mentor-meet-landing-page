@@ -421,7 +421,8 @@ header {
 
   .hero__img-right {
     justify-content: right;
-    margin-bottom: -60px;
+    /* margin-bottom: -60px; */
+    margin-bottom: -50px;
     margin-right: -4.3%;
     animation: slideInFromRight 1s ease-in-out;
   }
@@ -439,7 +440,6 @@ header {
   }
 
   .hero__title {
-
     font-size: 64px;
   }
 
