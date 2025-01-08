@@ -434,7 +434,7 @@ header {
 
   .hero__text {
     /* padding-block: 24px; */
-    padding-block: 36px;
+    /* padding-block: 36px; */
     animation: slideInFromBottom 1s ease-in-out;
   }
 
@@ -451,8 +451,8 @@ header {
   }
 
   .introduction {
-    /* padding: 56px 160px 72px; */
-    padding: 78px 160px 72px;
+    padding: 20px 160px 72px;
+    /* padding: 78px 160px 72px; */
   }
 
   .introduction__cards {
