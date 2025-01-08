@@ -228,7 +228,7 @@ header {
 }
 
 .card {
-  border-radius: 8px;
+  border-radius: 10px;
   background-repeat: no-repeat;
   background-size: 106%;
   transition: background-size 800ms;
@@ -479,7 +479,7 @@ header {
 
   .introduction__cards .card {
     inline-size: 16rem;
-    block-size: 16rem;
+    block-size: 15.5rem;
   }
 
   .introduction__subtitle {
@@ -488,6 +488,10 @@ header {
 
   .introduction__title {
     font-size: 2.5rem;
+  }
+
+  .introduction__description {
+    font-size: 1.125rem;
   }
 
   .download-app {
