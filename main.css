@@ -86,7 +86,7 @@ main {
 
 /* HEADER */
 header {
-  padding: 48px 32px 32px;
+  padding: 3em 2em 2em;
   text-align: center;
 }
 
@@ -96,7 +96,7 @@ header {
 
 /* HERO */
 .hero {
-  padding: 32px;
+  padding: 2em;
 }
 
 .hero__container {
@@ -109,12 +109,12 @@ header {
  
 .hero__img {
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 .hero__img > img {
   max-inline-size: unset;
-  width: 105vw;
+  inline-size: 105vw;
 }
 
 .hero__img-left,
@@ -123,7 +123,7 @@ header {
 }
 
 .hero__description {
-  margin-block: 24px;
+  margin-block: 1.5rem;
 }
 
 .hero__btn {
@@ -131,16 +131,16 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .btn {
   display: inline-block;
-  padding: 17px 40px 15px;
+  padding: 1.0625em 2.5em 0.9375em;
   background-color: var(--clr-cyan-600);
   color: var(--clr-white);
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 900;
   line-height: 150%;
   border-radius: 100px;
@@ -180,21 +180,20 @@ header {
 
 /* INTRODUCTION */
 .introduction {
-  padding: 32px 32px 64px;
+  padding: 2em 2em 4em;
   text-align: center;
 } 
   
 .introduction__section-indicator {
   position: relative;
-  margin-block-start: 80px;
-  /* margin-block-end: 64px; */
-  margin-block-end: 62px;
+  margin-block-start: 5rem;
+  margin-block-end: 3.875rem;
 }
 
 .introduction__section-indicator > div,
 .download-app__section-indicator > div {
-  width: 56px;
-  height: 56px;
+  width: 3.5rem;
+  height: 3.5rem;
   background-color: var(--clr-white);
   border: 1px solid var(--clr-slate-300);
   border-radius: 50%;
@@ -203,11 +202,11 @@ header {
 .introduction__section-indicator > div::after,
 .download-app__section-indicator > div::after {
   position: absolute;
-  top: -80px;
+  top: -5rem;
   content: '';
   background-color: var(--clr-slate-300);
   width: 1px;
-  height: 80px;
+  height: 5rem;
 }
 
 .introduction__section-indicator > div > span,
@@ -218,14 +217,14 @@ header {
   transform: translate(-50%, -50%);
   font-weight: 900;
   color: var(--clr-slate-600);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .introduction__cards {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 16px;
-  margin-bottom: 64px;
+  gap: 1rem;
+  margin-block-end: 4rem;
 }
 
 .card {
@@ -233,8 +232,8 @@ header {
   background-repeat: no-repeat;
   background-size: 106%;
   transition: background-size 800ms;
-  width: 148px;
-  height: 148px;
+  inline-size: 9.25rem;
+  block-size: 9.25rem;
 }
 
 .card:hover {
@@ -258,13 +257,13 @@ header {
 }
 
 .introduction__title {
-  margin: 16px 0 32px;
+  margin: 1rem 0 2rem;
 }
 
 /* DOWNLOAD-APP */
 .download-app {
-  padding: 0 32px 64px;
-  margin-top: 108px;
+  padding: 0 2em 4em;
+  margin-block-start: 6.75rem;
   background-repeat: no-repeat;
   background-image: linear-gradient(90deg, rgba(77, 151, 169, 0.9) 0%, rgba(77, 151, 169, 0.9) 100%), url('./assets/mobile/image-footer.jpg');
   background-size: cover;
@@ -272,32 +271,43 @@ header {
 }
 
 .download-app__description {
-  margin-block: 24px;
+  margin-block: 1.5rem;
 }
 
 .download-app__section-indicator {
   position: relative;
-  margin-block-start: -28px;
-  margin-block-end: 40px;
+  margin-block-start: -1.75rem;
+  margin-block-end: 2.5rem;
 }
 
 /* Utilities */
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .txt-1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 900;
   line-height: 110%;
 }
 
 .txt-2 {
   color: var(--clr-slate-600);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 150%;
 }
 
 .txt-3 {
   color: var(--clr-cyan-600);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 900;
   line-height: 110%;
   letter-spacing: 4px;
@@ -305,21 +315,21 @@ header {
 }
 
 .txt-4 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 900;
   line-height: 110%;
 }
 
 .txt-5 {
   color: var(--clr-white);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 900;
   line-height: 110%;
 }
 
 .txt-6 {
   color: var(--clr-white);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 150%;
 }
@@ -328,26 +338,33 @@ header {
   word-spacing: 1px;
 }
 
+.gr-txt {
+  background: linear-gradient(92.19deg, #855FB1 -15.84%, #4D96A9 114.64%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* MEDIA QUERIES */
-@media screen and (width >= 500px) {
+@media screen and (width >= 31.25em) {
   .hero__description,
   .introduction__description,
   .download-app__description {
-    padding-inline: 50px;
+    padding-inline: 3.125em;
   }
 }
 
-@media screen and (width >= 768px) {
+@media screen and (width >= 48em) {
   .hero {
-    padding: 32px 32px 64px;
+    padding: 2em 2em 4em;
   }
 
   .hero__img {
-    margin-bottom: 72px;
+    margin-block-end: 4.5rem;
   }
 
   .hero__title {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   .hero__btn {
@@ -355,7 +372,7 @@ header {
   }
 
   .introduction {
-    padding: 56px 32px 64px;
+    padding: 3.5em 2em 4em;
   }
 
   .introduction__cards {
@@ -363,20 +380,20 @@ header {
   }
 
   .introduction__cards .card {
-    width: 160px;
-    height: 160px;
+    inline-size: 10rem;
+    block-size: 10rem;
   }
 
   .introduction__subtitle {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .introduction__title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .download-app__title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .download-app {
@@ -386,23 +403,23 @@ header {
   .hero__description,
   .introduction__description,
   .download-app__description {
-    padding-inline: 190px;
+    padding-inline: 11.875em;
   }
 }
 
 
-@media screen and (width >= 1150px) {
+@media screen and (width >= 71.875em) {
   header {
-    padding: 80px 0 0;
+    padding: 5em 0 0;
   }
 
   .hero {
-    padding: 64px 32px 64px;
+    padding: 4em 2em 4em;
   }
 
   .hero__container {
     flex-direction: row;
-    gap: 32px;
+    gap: 2rem;
   }
 
   .hero__container > * {
@@ -415,16 +432,16 @@ header {
 
   .hero__img-left {
     justify-content: left;
-    margin-top: -60px;
-    margin-left: -4.3%;
+    margin-block-start: -3.75rem;
+    margin-inline-start: -4.3%;
     animation: slideInFromLeft 1s ease-in-out;
   }
 
   .hero__img-right {
     justify-content: right;
     /* margin-bottom: -60px; */
-    margin-bottom: -50px;
-    margin-right: -4.3%;
+    margin-block-end: -3.125rem;
+    margin-inline-end: -4.3%;
     animation: slideInFromRight 1s ease-in-out;
   }
 
@@ -436,50 +453,52 @@ header {
 
   .hero__text {
     /* padding-block: 24px; */
-    padding-block: 36px;
+    padding-block: 2.25em;
     animation: slideInFromBottom 1s ease-in-out;
   }
 
   .hero__title {
-    font-size: 64px;
+    font-size: 4em;
   }
 
   .hero__description {
-    font-size: 18px;
-    margin-block: 36px;
+    font-size: 1.125rem;
+    /* margin-block: 36px; */
+    margin-block: 1.875rem;
   }
 
   .introduction {
-    padding: 42px 160px 72px;
+    padding: 1.25em 10em 4.5em; /* *****2.625em******** */
+    /* padding: 2.625em 10em 4.5em; */
     /* padding: 78px 160px 72px; */
   }
 
   .introduction__cards {
-    gap: 32px;
+    gap: 2rem;
   }
 
   .introduction__cards .card {
-    width: 256px;
-    height: 256px;
+    inline-size: 16rem;
+    block-size: 16rem;
   }
 
   .introduction__subtitle {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .introduction__title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .download-app {
     background-image: linear-gradient(90deg, rgba(77, 151, 169, 0.9) 0%, rgba(77, 151, 169, 0.9) 100%), url(./assets/desktop/image-footer.jpg);
     background-size: cover;
-    padding: 0 160px 112px;
+    padding: 0 10em 7em;
   }
 
   .download-app__section-indicator {
     /* margin-block-end: 72px; */
-    margin-block-end: 84px;
+    margin-block-end: 5.25rem;
   }
 
   .download-app__text {
@@ -487,18 +506,18 @@ header {
     grid-template-columns: 2fr 2fr 1fr;
     align-items: start;
     text-align: left;
-    gap: 60px;
+    gap: 3.75em;
   }
 
   .download-app__title {
-    font-size: 40px;
-    max-width: 16ch;
+    font-size: 2.5rem;
+    max-inline-size: 16ch;
   }
 
   .download-app__description {
     margin-block: 0;
-    font-size: 18px;
-    max-width: 30ch;
+    font-size: 1.125rem;
+    max-inline-size: 30ch;
   }
 
   .hero__description,
@@ -508,84 +527,88 @@ header {
 }
 
 
-@media screen and (width >= 1800px) {
+@media screen and (width >= 112.5em) {
   .header__logo img {
-    width: 134px;
+    inline-size: 8.375rem;
   }
 
   .hero__img-left {
-    margin-left: -3.3%;
+    margin-inline-start: -3.3%;
   }
 
   .hero__img-right {
-    margin-right: -3.3%;
+    margin-inline-end: -3.3%;
   }
 
   .hero__img-left img,
   .hero__img-right img {
-    width: 482px;
+    inline-size: 30.125rem;
   }
 
   .hero__title {
-    font-size: 72px;
+    font-size: 4.5rem;
   }
 
   .hero__description {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .introduction__section-indicator > div,
   .download-app__section-indicator > div {
-    width: 68px;
-    height: 68px;
+    inline-size: 4.25rem;
+    block-size: 4.25rem;
   }
 
   .introduction__section-indicator > div::after, 
   .download-app__section-indicator > div::after {
-    height: 100px;
-    top: -100px;
+    block-size: 6.25rem;
+    top: -6.25rem;
   }
 
   .introduction__section-indicator {
-    margin-block-start: 100px;
-    margin-block-end: 80px;
+    margin-block-start: 6.25rem;
+    margin-block-end: 5rem;
   }
 
   .introduction__cards .card {
-    width: 272px;
+    inline-size: 17rem;
   }
 
   .introduction__cards {
-    gap: 38px;
+    gap: 2.375rem;
   }
 
   .introduction__cards {
-    margin-bottom: 80px;
+    margin-block-end: 5rem;
   }
 
   .introduction__subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .introduction__title {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   .introduction__description {
-    padding-block-end: 80px;
-    font-size: 18px;
+    padding-block-end: 5em;
+    font-size: 1.125rem;
   }
 
   .download-app__title {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
 
   .download-app__description {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .introduction__description {
-    padding-inline: 390px;
+    padding-inline: 24.375em;
+  }
+
+  .download-app__section-indicator {
+    margin-block-start: -2.125rem;
   }
 }
 
