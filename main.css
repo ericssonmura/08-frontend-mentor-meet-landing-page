@@ -434,7 +434,7 @@ header {
 
   .hero__text {
     /* padding-block: 24px; */
-    /* padding-block: 36px; */
+    padding-block: 36px;
     animation: slideInFromBottom 1s ease-in-out;
   }
 
